@@ -1,0 +1,17 @@
+{
+  // Cloudflare Pages — Nexus Travels
+  //
+  // This file only matters if the project is deployed from Git or from the
+  // Wrangler command line. A drag-and-drop (Direct Upload) site does not
+  // need it at all.
+  //
+  // Careful: once this file exists, Cloudflare treats it as the source of
+  // truth and the matching fields in the dashboard become read-only. For
+  // this site that costs nothing — there are no Functions, no bindings and
+  // no build step, just static files.
+  //
+  // "name" must match the project name in Cloudflare exactly.
+  "name": "nexustravels",
+  "compatibility_date": "2026-10-25",
+  "pages_build_output_dir": "public"
+}
