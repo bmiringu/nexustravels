@@ -20,7 +20,11 @@ img{max-width:100%}
 <link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTmV4dXMgVHJhdmVscyDigJQgYmFkZ2UsIGZhdmljb24gY3V0Ij4KICA8dGl0bGU+TmV4dXMgVHJhdmVscyDigJQgYmFkZ2UsIGZhdmljb24gY3V0PC90aXRsZT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMyIgZmlsbD0iIzBGMjEyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMyLDMyKSBzY2FsZSgwLjkwKSB0cmFuc2xhdGUoLTMyLC0zMikiPjxwb2x5bGluZSBwb2ludHM9IjEyLjYwLDUwLjAwIDIwLjYwLDE4LjUwIDM5LjEwLDUwLjAwIDQ3LjEwLDE4LjUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNFQkYxRUQiIHN0cm9rZS13aWR0aD0iNi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSIxMi42MCIgY3k9IjUwLjAwIiByPSI1LjQiIGZpbGw9IiNDNzlBNEIiLz48Y2lyY2xlIGN4PSI0Ny4xMCIgY3k9IjE4LjUwIiByPSI4LjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M3OUE0QiIgc3Ryb2tlLXdpZHRoPSIzLjYiLz48L2c+Cjwvc3ZnPgo=" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- loaded without blocking the first paint: if Google Fonts is slow or
+     unreachable the page still appears immediately in a system sans and
+     swaps to Archivo when it arrives -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all';this.onload=null"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></noscript>
 <style>
 /* ============================================================
    NEXUS TRAVELS — Concierge theme
@@ -56,7 +60,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 body{
   margin:0;background:var(--page);color:var(--ink);
-  font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+  font-family:Archivo,"Segoe UI","Helvetica Neue",Arial,sans-serif;
   font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:74rem;margin:0 auto;padding:0 1.25rem}
