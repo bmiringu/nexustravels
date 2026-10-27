@@ -1,17 +1,13 @@
 {
-  // Cloudflare Pages — Nexus Travels
+  // Cloudflare Workers — Nexus Travels (static site)
   //
-  // This file only matters if the project is deployed from Git or from the
-  // Wrangler command line. A drag-and-drop (Direct Upload) site does not
-  // need it at all.
-  //
-  // Careful: once this file exists, Cloudflare treats it as the source of
-  // truth and the matching fields in the dashboard become read-only. For
-  // this site that costs nothing — there are no Functions, no bindings and
-  // no build step, just static files.
-  //
-  // "name" must match the project name in Cloudflare exactly.
+  // "assets.directory" is what tells the Worker which folder to serve.
+  // An earlier version of this file used "pages_build_output_dir", which
+  // is a Cloudflare PAGES key — this project is a Worker, so that key was
+  // ignored and the images in public/images were never deployed.
   "name": "nexustravels",
-  "compatibility_date": "2026-10-25",
-  "pages_build_output_dir": "public"
+  "compatibility_date": "2026-10-27",
+  "assets": {
+    "directory": "./public/"
+  }
 }
